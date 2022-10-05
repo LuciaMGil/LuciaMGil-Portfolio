@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React, { Component } from 'react';
+import NavBar from './components/Navbar';
+import AboutMe from './pages/AboutMe';
+import Footer from "./components/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
+let Component
+// eslint-disable-next-line default-case
+switch (window.location.pathname) {
+  case "/":
+    Component = <AboutMe />
+    break
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      {Component}
+      <footer >
+      <Footer />
+      </footer>
     </div>
   );
 }

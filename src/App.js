@@ -3,7 +3,9 @@ import './App.css';
 import React, { Component } from 'react';
 import NavBar from './components/Navbar';
 import AboutMe from './pages/AboutMe';
+import Projects from './pages/Projects';
 import Footer from "./components/Footer";
+import ContactMe from "./pages/Contact";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -13,6 +15,12 @@ let Component
 switch (window.location.pathname) {
   case "/":
     Component = <AboutMe />
+    break
+    case "/projects":
+    Component = <Projects />
+    break
+    case "/contactMe":
+    Component = <ContactMe />
     break
 }
 

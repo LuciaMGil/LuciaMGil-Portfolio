@@ -1,18 +1,21 @@
-import React from 'react'
+import React from 'react';
+import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Figure from 'react-bootstrap/Figure';
-import Lucia from '../img/lucia.png';
+import lucia from '../img/lucia.png';
 
 
 function AboutMe() {
     return (
       <>
-        <Card style={{ border: 'none'}}>
+      <Row className="justify-content-center" style={{ marginTop: '80px'}}>
+      
+        <Card  style={{ border: 'none', width: '80%'}}>
           <Figure style={{ margin: '60px'}}>
             <Figure.Image
               width={250}
               height={250}
-              src={Lucia}
+              src={lucia}
             />
           </Figure>
           <Card.Title>About Me</Card.Title>
@@ -22,6 +25,11 @@ function AboutMe() {
               </Card.Text>
             </Card.Body>
         </Card>
+      </Row>
+       
+        
+       
+         
       </>
     );
   }

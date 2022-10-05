@@ -7,7 +7,7 @@ import linkedin from '../img/linkedin.png';
 
 function Footer() {
   return (
-    <Figure>
+    <Figure className='footer'>
     <a href="https://github.com/LuciaMGil">
     <Figure.Image
       width={40}

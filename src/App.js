@@ -6,6 +6,7 @@ import AboutMe from './pages/AboutMe';
 import Projects from './pages/Projects';
 import Footer from "./components/Footer";
 import ContactMe from "./pages/Contact";
+import Resume from "./pages/Resume";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -23,6 +24,9 @@ switch (window.location.pathname) {
     case "/contactMe":
     Component = <ContactMe />
     break
+    case "/resume":
+      Component = <Resume />
+      break
 }
 
   return (

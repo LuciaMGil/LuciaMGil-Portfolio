@@ -27,7 +27,7 @@ function Footer() {
       style={{ margin: '20px'}}
     />
     </a>
-    <a href="https://www.linkedin.com/in/luciagil/">
+    <a href="https://stackoverflow.com/users/20170223/lucia-gil">
     <Figure.Image
       width={40}
       height={42}

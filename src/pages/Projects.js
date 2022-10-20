@@ -10,7 +10,7 @@ import timedquiz from '../img/timedquiz.png';
 import weather from '../img/weather.png';
 import notetaker from '../img/notetaker.png';
 import realestate from '../img/realestate.png';
-
+import positivethoughts from '../img/positiveThoughts.png';
 
 function Projects() {
   return (
@@ -20,7 +20,29 @@ function Projects() {
     <Col  xs={12} md={10}>
     <br></br>
     <CardGroup>
-    
+    <Card style={{ margin: '20px', width: '68rem', border: 'none' }}>
+        <Card.Img  src={positivethoughts} />
+        <Card.Body>
+          <Card.Title>Positive Thoughts App</Card.Title>
+          <Card.Text>
+         An application that displays positive thoughts and allows users to add profiles, save thoughts and add comments.
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer style={{ borderBottomLeftRadius: '5px', borderBottomRightRadius: '5px', border: 'none', background: 'white', padding: '50px'}}>
+            <button>
+               <a href="https://github.com/m-j-hodges/positive-thoughts">
+          <small >View on Github</small>
+          </a>   
+            </button>
+            <button style={{ margin: '20px',border: 'none', paddingRight: '55px', paddingLeft: '40px'}}>
+               <a href="https://positive-thoughts-9-28-2022.herokuapp.com/">
+          <small >View Deployed App</small>
+          </a>   
+            </button>
+         
+        </Card.Footer>
+      </Card>
+
 
     <Card style={{ margin: '20px', width: '68rem', border: 'none' }}>
         <Card.Img  src={realestate} />
